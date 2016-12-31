@@ -1,1 +1,20 @@
-Docs
+INSTALLATION
+
+# install node.js and npm
+1. yum install nodejs npm --enablerepo=epel
+
+# install git if not installed
+2. yum install git
+
+# clone the chat application
+3. git clone https://github.com/smano/chat.git
+
+---- Now Go to chat directory
+# Install all dependencies for app
+4. npm install
+
+# Install PM2 (production process manager)
+5. npm install pm2 -g
+
+# start server at port 80
+6. PORT=80 pm2 start server.js
