@@ -9,12 +9,17 @@ INSTALLATION on Linux (Amazon linux or Redhat based linux distributions)
 # clone the chat application
 3. git clone https://github.com/smano/chat.git
 
----- Now Go to chat directory
+# Now Go to chat directory that you have just cloned through git
+# Perform following steps when your current directory is "chat"
+
 # Install all dependencies for app
 4. npm install
 
 # Install PM2 (production process manager)
 5. npm install pm2 -g
 
+# Update Database Parameters in "lib/db/dbInitialize.js" file
+6. nano lib/db/dbInitialize.js
+
 # start server at port 80
-6. PORT=80 pm2 start server.js
+7. PORT=80 pm2 start server.js
