@@ -78,6 +78,7 @@ $(document).ready(function() {
         conversation = conversation + '</div>';
         var $appendedElement = $(conversation);
         $('#chatterBoxChatter').append($appendedElement);
+        $('#chatterBoxChatter').scrollTop($('#chatterBoxChatter')[0].scrollHeight);
         return $appendedElement;
     }
 
